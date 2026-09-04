@@ -3,6 +3,10 @@ backend:
   repo: smthmb/blog
   branch: main
   base_url: https://cms-auth.matikusm.workers.dev
+  auth_endpoint: auth
+
+site_url: https://smthmatt.pl/blog/admin
+display_url: https://smthmatt.pl/blog/admin
 
 media_folder: "assets/images/uploads"
 public_folder: "assets/images/uploads"
