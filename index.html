@@ -25,8 +25,14 @@
     <p>project announcements, experiments, and funky stuff. :)</p>
   </header>
 
-  <main id="posts">
-    <p>welcome! new posts that have been made will show up here once written and published.</p>
-  </main>
+<main id="posts">
+      {% for post in site.posts %}
+        <article style="margin-bottom: 30px;">
+          <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+          <p><small>{{ post.date | date: "%Y-%m-%d" }}</small></p>
+          <div>{{ post.content }}</div>
+        </article>
+      {% endfor %}
+    </main>
 </body>
 </html>
