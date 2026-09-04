@@ -19,12 +19,5 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
 - { label: "title", name: "title", widget: "string" }
-      - { 
-    label: "publish date", 
-    name: "date", 
-    widget: "datetime", 
-    format: "YYYY-MM-DD HH:mm", 
-    date_format: "YYYY-MM-DD", 
-    time_format: "HH:mm" 
-        }
+      - { label: "publish date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm", date_format: "YYYY-MM-DD", time_format: "HH:mm" }
       - { label: "body", name: "body", widget: "markdown" }
